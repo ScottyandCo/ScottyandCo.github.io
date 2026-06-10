@@ -1,3 +1,8 @@
+var returnContainer = document.getElementById('returnContainer');
+var messageContainer = document.getElementById('messageContainer');
+var nameContainer = document.getElementById('nameContainer');
+var emailContainer = document.getElementById('emailContainer');
+
 document.addEventListener('DOMContentLoaded', function () {
 
   document.getElementById('myForm').addEventListener('submit', async function (event) {
