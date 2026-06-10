@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/meyer-reset.css">
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <script src="https://kit.fontawesome.com/f153a56588.js" crossorigin="anonymous"></script>
+    <title>Sample Project</title>
+</head>
+<body class="w-full bg-[#D9D9D9]">
+<header class="sticky md:top-0 bg-[#164E63]">
+    <span class="flex w-full gap-4 items-center justify-between">
+        <i class="fa-solid fa-terminal text-5xl text-[#ECFEFF] pl-2 pt-2 pb-2"></i>
+    <span class="flex md:hidden justify-end">
+        <i class="fa-solid fa-burger text-4xl text-[#ECFEFF] pr-2"></i>
+    </span>
+    </span>
+    <nav class="hidden md:flex justify-center">
+        <ul class="flex gap-2">
+            <li class="min-inline-1/4 bg-[#164E63] rounded-lg py-1 px-2 m-2 text-[#ECFEFF]"><a href=".">Home</a></li>
+            <li class="min-inline-1/4 bg-[#164E63] rounded-lg py-1 px-2 m-2 text-[#ECFEFF]"><a href="about.html">About</a></li>
+            <li class="min-inline-1/4 bg-[#164E63] rounded-lg py-1 px-2 m-2 text-[#ECFEFF]"><a href="contact.html">Contact</a></li>
+            <li class="min-inline-1/4 bg-[#164E63] rounded-lg py-1 px-2 m-2 text-[#ECFEFF]"><a href="resume.html">Resume</a></li>
+            <li class="min-inline-1/4 bg-[#ECFEFF] rounded-lg py-1 px-2 m-2 text-[#164E63]"><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="flex text-[#ECFEFF] py-10">
+        <article class="p-4 px-6 bg-[#303030] mx-auto rounded-2xl">
+            <form class="flex flex-col gap-1" id="myForm">
+                <h2 class="text-xl font-bold mx-auto mb-4">Find Country Information</h2>
+                        <p><label for="inputCountry">Enter a Country Name</label></p>
+                        <input class="mb-4 p-2 rounded-md text-[#ECFEFF] bg-[#303030] border border-solid border-[#ECFEFF]]" type="text" id="inputCountry" name="inputCountry" placeholder="Australia">
+                        <p class="font-bold pb-4">What would you like to show?</p>
+                        <p class="flex flex-col">
+                            <p><input type="checkbox" id="cbPopulation" name="cbPopulation">
+                            <label for="cbPopulation">Total Population</label></p>
+                            <p><input type="checkbox" id="cbCapital" name="cbCapital">
+                            <label for="cbCapital">Capital City</label></p>
+                            <p><input type="checkbox" id="cbCurrency" name="cbCurrency">
+                            <label for="cbCurrency">Currency</label></p>
+                            <p><input type="checkbox" id="cbFlag" name="cbFlag">
+                            <label for="cbFlag">Flag</label></p>
+                        </p>
+                            <button class="flex my-6 bg-[#06B6D4] rounded-md py-1 px-2 text-[#000000] mx-auto w-full justify-center" type="submit">Submit</button>
+                        </p>
+            </form>
+            <p id="returnContainer"></p>
+        </article>       
+</main>
+<footer class="sticky md:bottom-0 p-4 flex flex-col md:flex-row items-center justify-between gap-4 md:w-full mx-auto bg-[#164E63] text-[#ECFEFF]">
+    <section class="flex items-center gap-4">
+        <i class="fa-solid fa-terminal pl-1 pr-4 text-3xl"></i>
+        <p class="text-sm">© Copyright 2026 Jason Scott.</p>
+    </section>
+    <section>
+        <ul class="flex flex-row gap-4 text-sm">
+            <li><a href="https://www.google.com/search?q=Nowhere">Nowhere</a></li>
+            <li>|</li>
+            <li><a href="https://www.google.com/search?q=Nothing">Nothing</a></li>
+            <li>|</li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+</footer>
+<script src="/assets/js/ninja-api.js"></script>
+</body>
+</html>
